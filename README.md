@@ -1,4 +1,4 @@
-Jackandsons
-===========
+Jack & Sons
+=====
 
-BaseKit Ecommerce Template
+BaseKit Eccomerce Template
