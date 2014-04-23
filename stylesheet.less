@@ -317,7 +317,6 @@ header.bk-header {
 
 .bk-pt-default .bk-header {
     background-color:@color-swatch3;
-    margin-bottom:20px;
 }
 
 .bk-pt-default .featurebtn-container {
@@ -343,6 +342,29 @@ header.bk-header {
 
 .bk-pt-default .widget.ecombasket .ecombasket-list-container {
     z-index:9999;
+}
+
+.bk-pt-default .navbar {
+    margin-bottom:30px;
+    margin-top:0;
+    background-color:lighten(@color-swatch3,10%);
+}
+
+.bk-pt-default .widget.ecombasket .ecombasket-pull {
+    border:2px solid @color-swatch1;
+}
+
+.bk-pt-default .widget.companyname {
+    padding-bottom:0;
+}
+
+.bk-pt-default .widget.ecombasket .ecombasket-pull:hover {
+    background-color:lighten(@color-swatch3,10px);
+}
+
+.bk-pt-default footer.bk-footer {
+    padding:2em 0;
+    margin-top:0;
 }
 
 /* ===============================
@@ -858,12 +880,6 @@ header.bk-header {
 
 /* COMPANY NAME */
 
-.widget.companyname {
-    display: block;
-    float: left;
-    padding:6px 0px;
-}
-
 .widget.companyname a {
     font-family: @font-swatch10-font-family;
     font-weight: @font-swatch10-font-weight;
@@ -877,6 +893,12 @@ header.bk-header {
 .widget.companyname a:hover {
     cursor: pointer;
     text-decoration: none;
+}
+
+.widget.companyname {
+    display:table;
+    margin-top:-20px;
+    padding-bottom:30px;
 }
 
 /* LOGO */
@@ -1396,13 +1418,15 @@ header.bk-header {
             background-color:lighten(@color-swatch3,5%);
             }
         @media @tablet {
-            width:120px;
+            width:100%;
             padding:10px;
             margin:0px auto;
             display:table;
             float:none;
             left:0;
             top:-20px;
+            background-color:rgba(0,0,0,0.2);
+            border:0
         }
         @media @mobile {
             text-align: center;
@@ -1453,7 +1477,6 @@ header.bk-header {
             right: 0;
             float:none;
             position:relative;
-            top: 120px;
             margin-top:0;
         }
         ul {
@@ -1551,7 +1574,7 @@ header.bk-header {
                 display: block;
                 text-align: center;
                 &:hover {
-                    background-color: lighten(@color-swatch3,10%);
+                    background-color: lighten(@color-swatch3,15%);
                         }
                 @media @tablet {
                     display: inline-block;
@@ -1642,7 +1665,7 @@ header.bk-header {
                         margin: 0;
                         font-size: 1em;
                         &:hover {
-                           background-color: lighten(@color-swatch3,10%); 
+                           background-color: lighten(@color-swatch3,15%); 
                         }
                         @media @tablet {
                             width: 56px;
@@ -1794,7 +1817,7 @@ header.bk-header {
 }
 
 .widget.ecomcheckout .checkout-order-button:disabled:hover {
-     background-color: lighten(@color-swatch3,10%);
+     background-color: lighten(@color-swatch3,15%);
 }
 
 /* ===============================
@@ -2207,7 +2230,7 @@ footer.bk-footer {
 .widget.button button {
     background:@color-swatch3;
     &:hover {
-        background: lighten(@color-swatch3,10%);
+        background: lighten(@color-swatch3,15%);
     }
 }
 
@@ -2302,7 +2325,7 @@ footer.bk-footer {
   
 .widget.contactform form fieldset button.btn:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2346,7 +2369,7 @@ button.btn {
 
 button.btn:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2363,7 +2386,7 @@ button.btn:hover {
 
 .signupform fieldset button:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2393,7 +2416,7 @@ button.btn:hover {
 
 .widget.profile form button:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2425,7 +2448,7 @@ button.btn:hover {
 
 .blogsearch form button:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2451,7 +2474,7 @@ button.btn:hover {
 
 .widget.paypalbuynow .widget.button.paypal:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2468,7 +2491,7 @@ button.btn:hover {
 
 .widget.tweet a:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2486,7 +2509,7 @@ button.btn:hover {
 
 .widget.dropbox button:hover {
   cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
@@ -2502,7 +2525,7 @@ button.btn:hover {
 
 .widget.button button:hover {
       cursor: pointer;
-  background-color: lighten(@color-swatch3,10%);
+  background-color: lighten(@color-swatch3,15%);
       -webkit-transition: background-color 0.15s ease-in-out;
       -moz-transition: background-color 0.15s ease-in-out;
       -o-transition: background-color 0.15s ease-in-out;
@@ -2528,6 +2551,22 @@ blockquote:before {
 @media only screen and (max-width: 768px) {
 
   /* UL ALIGN RIGHT */
+
+    .canvas.wrapper {
+        margin:0;
+        width:100%;
+    }
+
+    .navbar.wrapper {
+        margin:0;
+        width:100%;
+    }
+
+    .navbar {
+        margin-top:-100px;
+        background-color:@color-swatch3;
+        padding:15px 0px;
+    }
 
     .widget .extendednavigation {
         max-width:100%;
@@ -2570,6 +2609,7 @@ blockquote:before {
 
     .widget .extendednavigation a.pull {
         width:100%;
+        top:-20px;
     }
 
     .widget.menusections ul li {
@@ -2668,6 +2708,7 @@ blockquote:before {
     .widget .extendednavigation ul {
         position:absolute;
         z-index:99999;
+        margin-top:15px;
     }
     .bk-pt-default .widget.menusections {
         margin-top: 0;
@@ -2712,11 +2753,30 @@ blockquote:before {
         position:absolute;
     }
     .bk-pt-default .header-container {
-        padding: 30px 0px 120px 0px;
+        padding: 30px 0px 50px 0px;
     }
     .widget.profile .bk-profile-socialicons {
         margin: 0px auto;
         display: table;
+    }
+    .header-left {
+        display:none;
+    }
+    .bk-pt-default .widget.companyname {
+        padding-bottom:30px;
+    }
+    .bk-pt-default footer.bk-footer {
+        padding:1em 0;
+        margin-top:0;
+    }
+    .bk-pt-default .footer-container .footer-center {
+        margin:0;
+    }
+    .bk-pt-default .footer-container .footer-right {
+        padding:0 0 0 20px;
+    }
+    .bk-pt-default .footer-container .footer-left {
+        padding:0 0 0 20px;
     }
 } 
 
@@ -2846,6 +2906,10 @@ blockquote:before {
     }
     .widget.profile form fieldset input {
         width:50%;
+    }
+    .widget.ecomcheckout table tr td .checkout-quantitybtn button {
+        width: 30px;
+        height: 30px;
     }
 
 }

@@ -137,11 +137,11 @@
         },
         "font10": {
             "font-family": "\"Oswald\", Arial, sans-serif",
-            "font-size": "24px",
+            "font-size": "18px",
             "font-weight": "700",
-            "line-height": "28px",
+            "line-height": "26px",
             "color": "@color-swatch1",
-            "letter-spacing": "2px"
+            "letter-spacing": "1px"
         }
     }
 }
