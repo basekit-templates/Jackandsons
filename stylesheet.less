@@ -151,19 +151,6 @@ header.bk-header {
     padding:30px 0px;
 }
 
-.widget.extendednavigation .bk-overlay {
-    position: absolute;
-    right: 0px;
-    left: auto!important;
-    top: 0px;
-    bottom: 0px;
-    z-index: 8000;
-    cursor: pointer;
-    width: 100%;
-    float: right;
-    height: 100%;
-}
-
 .twitter ul li a {
     font-weight:400;
     font-size:@font-swatch4-font-size;
@@ -269,6 +256,7 @@ header.bk-header {
                 float:right;
                 width:33%;
                 margin-top:30px;
+                height:60px;
                 .widget.profile span {
                     float:right;
                 }
@@ -352,6 +340,7 @@ header.bk-header {
 
 .bk-pt-default .widget.ecombasket .ecombasket-pull {
     border:2px solid @color-swatch1;
+    width:120px;
 }
 
 .bk-pt-default .widget.companyname {
@@ -2381,22 +2370,23 @@ button.btn:hover {
    =============================== */
 
 .signupform fieldset button {
-    padding:10px 15px 11px;
+   padding:10px 15px 11px;
 }
 
 .signupform fieldset button:hover {
-  cursor: pointer;
-  background-color: lighten(@color-swatch3,15%);
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
+   cursor: pointer;
+   background-color: lighten(@color-swatch3,15%);
+   -webkit-transition: background-color 0.15s ease-in-out;
+   -moz-transition: background-color 0.15s ease-in-out;
+   -o-transition: background-color 0.15s ease-in-out;
+   transition: background-color 0.15s ease-in-out;
 }
 
 .signupform fieldset input {
     width:70%;
     border:0;
     background-color:darken(@color-swatch1,5%);
+    text-indent:10px;
     @media @tablet {
         width: 90%;
     }
@@ -2753,7 +2743,7 @@ blockquote:before {
         position:absolute;
     }
     .bk-pt-default .header-container {
-        padding: 30px 0px 50px 0px;
+        padding: 30px 0px 40px 0px;
     }
     .widget.profile .bk-profile-socialicons {
         margin: 0px auto;
@@ -2784,6 +2774,12 @@ blockquote:before {
     }
     header.bk-header {
         margin-top:30px;
+    }
+    .bk-pt-default header.bk-header {
+    margin-top:0;
+    }
+    .bk-pt-default .navbar {
+        position:relative;
     }
 } 
 

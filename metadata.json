@@ -99,8 +99,8 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
-            "font-size": "14px",
+            "font-family": "\"Myriad Pro\", Helvetica, sans-serif",
+            "font-size": "16px",
             "font-weight": "400",
             "line-height": "22px",
             "color": "@color-swatch1",
