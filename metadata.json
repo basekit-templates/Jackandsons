@@ -130,7 +130,7 @@
         "font9": {
             "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "16px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "22px",
             "color": "@color-swatch1",
             "letter-spacing": "2px"
