@@ -359,6 +359,14 @@ header.bk-header {
     margin-top:0;
 }
 
+.bk-pt-default .menu-container {
+    background-color: fadeout(@color-swatch4, 95%);
+}
+
+.bk-pt-default .navbar {
+    z-index:auto;
+}
+
 /* ===============================
    3. FEATURE
    =============================== */
@@ -485,11 +493,6 @@ header.bk-header {
 /* ===============================
    4. MENU SECTIONS NAVIGATION
    =============================== */
-
-.bk-pt-default .menu-container {
-    background-color: fadeout(@color-swatch4, 95%);
-    
-}
 
 .widget.menusections {
     text-align: center;
@@ -2570,6 +2573,12 @@ blockquote:before {
     }
 }
 
+    .bk-pt-default .widget.ecombasket {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
 /* ===============================
    9. IPAD WIDTH
    =============================== */
@@ -2777,6 +2786,7 @@ blockquote:before {
     .bk-pt-default .widget.ecombasket .ecombasket-list-container {
         width:100%;
         position:absolute;
+        margin-top:20px;
     }
     .bk-pt-default .header-container {
         padding: 30px 0px 0px 0px;
@@ -2787,9 +2797,6 @@ blockquote:before {
     }
     .header-left {
         display:none;
-    }
-    .bk-pt-default .widget.companyname {
-        padding-bottom:30px;
     }
     .bk-pt-default footer.bk-footer {
         padding:1em 0;
