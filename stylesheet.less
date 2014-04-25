@@ -259,6 +259,7 @@ header.bk-header {
                 float:right;
                 margin-top:30px;
                 height:60px;
+                width:33%;
                 .widget.profile span {
                     float:right;
                 }
@@ -891,7 +892,6 @@ header.bk-header {
 .widget.companyname {
     display:table;
     margin-top:-20px;
-    padding-bottom:30px;
 }
 
 /* LOGO */
@@ -1400,13 +1400,14 @@ header.bk-header {
 }   
 .widget.ecombasket {
     .ecombasket-pull {
+        width:120px;
         padding:0;
         background-color:rgba(0,0,0,0.2);
+        float:right;
         &:hover{
             background-color:lighten(@color-swatch3,5%);
             }
         @media @tablet {
-            width:100%;
             margin:0px auto;
             display:table;
             float:none;
@@ -1421,7 +1422,6 @@ header.bk-header {
         p, .basket-count { 
             padding:15px 0px;
             @media @tablet {
-                padding: 0;
                 color: @font-swatch7-color;
                 font-size: @font-swatch7-font-size;
                 line-height: @font-swatch7-line-height;
@@ -1561,6 +1561,7 @@ header.bk-header {
                 border: none;
                 display: block;
                 text-align: center;
+                width:100%;
                 &:hover {
                     background-color: lighten(@color-swatch3,15%);
                         }
@@ -2558,6 +2559,21 @@ blockquote:before {
    9. IPAD WIDTH
    =============================== */
 
+@media only screen and (min-width: 550px) and (max-width: 600px)  {
+    .widget.feature .feature-bgimg .content h3 {
+        display:none;
+    }
+    .widget.ecombasket {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+    }
+}
+
+/* ===============================
+   9. IPAD WIDTH
+   =============================== */
+
 @media only screen and (max-width: 768px) {
 
   /* UL ALIGN RIGHT */
@@ -2619,7 +2635,7 @@ blockquote:before {
 
     .widget .extendednavigation a.pull {
         width:100%;
-        top:-8px;
+        top:-7px;
         position:relative;
     }
 
@@ -2719,7 +2735,6 @@ blockquote:before {
     .widget .extendednavigation ul {
         position:absolute;
         z-index:99999;
-        margin-top:15px;
     }
     .bk-pt-default .widget.menusections {
         margin-top: 0;
