@@ -101,7 +101,7 @@
         "font6": {
             "font-family": "\"Myriad Pro\", Helvetica, sans-serif",
             "font-size": "16px",
-            "font-weight": "400",
+            "font-weight": "700",
             "line-height": "22px",
             "color": "@color-swatch1",
             "color-hover": "@color-swatch4",
@@ -116,8 +116,8 @@
             "line-height": "20px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
-            "background-color": "transparent",
-            "background-color-hover": "darken(@color-swatch1,5%)"
+            "background-color": "@color-swatch3;",
+            "background-color-hover": "lighten(@color-swatch3,15%)"
         },
         "font8": {
             "font-family": "\"Oswald\", Arial, sans-serif",
