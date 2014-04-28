@@ -2,7 +2,7 @@
     "name":"Jack&Sons",
     "thumbnail":"jackandsons.png",
     "screenshot":"jackandsons.png",
-    "pageTypes": ["home", "default", "about", "contact", "gallery"],
+    "pageTypes": ["home", "default", "ecomcheckout", "about", "contact", "gallery"],
     "tags": {
     "en": ["minimal", "clean", "photography", "vintage", "modern", "retail", "fashion", "website", "creative", "man", "professional", "unique", "ecommerce", "sans-serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
@@ -133,7 +133,7 @@
             "font-weight": "700",
             "line-height": "22px",
             "color": "@color-swatch1",
-            "letter-spacing": "2px"
+            "letter-spacing": "inherit"
         },
         "font10": {
             "font-family": "\"Oswald\", Arial, sans-serif",

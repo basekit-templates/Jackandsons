@@ -257,7 +257,7 @@ header.bk-header {
 
             .header-right {
                 float:right;
-                margin-top:30px;
+                margin-top:15px;
                 height:60px;
                 width:33%;
                 .widget.profile span {
@@ -297,6 +297,14 @@ header.bk-header {
                 }
             }
         }
+
+.widget.profile .bk-profile-email a {
+    color:@font-swatch6-color;
+}
+
+.widget.profile .twitter p {
+    color:@font-swatch6-color;
+}
 
 /* ===============================
    2. DEFAULT PAGE
@@ -412,13 +420,14 @@ header.bk-header {
                 letter-spacing: @font-swatch8-letter-spacing;
                 line-height: @font-swatch8-line-height;
                 word-wrap: break-word;
+                letter-spacing: 3px;
                 @media @tablet {
                     font-size: bkscale(@font-swatch8-font-size, 0.7);
                     line-height: bkscale(@font-swatch8-line-height, 0.75);
                 }
                 span {
                     padding-bottom: 0;
-                    text-shadow: 5px 5px #000000;
+                    text-shadow: 4px 4px #000000;
                 }
             }
             h3  { 
@@ -460,14 +469,14 @@ header.bk-header {
 }
 
 .widget.feature .feature-bgimg .content button {
-    background-color:rgba(0,0,0,0.2);
+    background-color:@color-swatch3;
     height: 45px;
-    -webkit-box-shadow: 2px 2px 0 1px #000000;
-    box-shadow: 2px 2px 0 1px #000000;
+    -webkit-box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .widget.feature .feature-bgimg .content button:hover {
-    background-color:@color-swatch3;
+    background-color:lighten(@color-swatch3,10%);
 }
 
 .widget.feature button:hover {
@@ -2608,7 +2617,6 @@ blockquote:before {
 
     .navbar {
         margin-top:-100px;
-        background-color:@color-swatch3;
         padding:0;
     }
 
@@ -2883,9 +2891,11 @@ blockquote:before {
     .widget.feature .feature-bgimg .content h2 {
           font-size: bkscale(@font-swatch8-font-size,0.5);
           line-height:bkscale(@font-swatch8-line-height,0.5);
+          padding-bottom:10px;
+          text-shadow:1px 1px #000000;
     }
     .widget.feature .feature-bgimg .content h3 {
-          font-size: bkscale(@font-swatch9-font-size,0.8);
+          font-size: bkscale(@font-swatch9-font-size,0.9);
           line-height:bkscale(@font-swatch9-line-height,0.7);
     }
     .bk-content-text h2 {
