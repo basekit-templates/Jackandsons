@@ -1,5 +1,5 @@
 {
-    "name":"Jack&Sons",
+    "name":"JackandSons",
     "thumbnail":"jackandsons.png",
     "screenshot":"jackandsons.png",
     "pageTypes": ["home", "default", "ecomcheckout", "about", "contact", "gallery"],
