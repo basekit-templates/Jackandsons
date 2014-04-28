@@ -25,9 +25,6 @@ Table of Contents -
    =============================== */
 
 body {
-    font-family:@font-swatch5-font-family;
-    margin: 0;
-    padding: 0;
     background-color:darken(@color-swatch1,5%);
 }
 
@@ -36,41 +33,9 @@ body {
     margin: 0 10%;
 }
 
-a {
-    font-family:@font-swatch5-font-family;
-    font-size:@font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height:@font-swatch5-line-height;
-    color:@color-swatch3;
-    letter-spacing: @font-swatch5-letter-spacing;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, p {
-    margin: 0;
-    padding: 0 0 10px;
-}
-
-.widget.feature .feature-bgimg .content {
-    background-color: rgba(1, 1, 1, 0.2);
-}
-
-.widget.feature .feature-bgimg {
-    min-height:0;
-}
-
 /* ===============================
    3. CUSTOM CSS
    =============================== */
-
-.featureimage {
-    width: 100%;
-    height:100%;
-}
 
 .canvas {
     position:relative;
@@ -85,7 +50,7 @@ h1, h2, h3, h4, h5, p {
 .navbar {
     padding:10px 0px;
     background-color:rgba(0, 0, 0, 0.2);
-    margin-top:-200px;
+    margin-top:-100px;
     position:relative;
     z-index:8000;
 }
@@ -94,42 +59,8 @@ h1, h2, h3, h4, h5, p {
     position: relative;
 }
 
-.contacttextwidget {
-    text-align:center;
-}
-
-.bk-content-text h2 {
-    overflow:hidden;
-}
-
-.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon {
-    padding:3px;
-}
-
 .main {
     padding:0;
-}
-
-.socialheader {
-    float:none;
-}
-
-.widget.companyaddress p {
-    font-family:@font-swatch5-font-family;
-    font-weight: @font-swatch5-font-weight;
-    color:@font-swatch5-color;
-    line-height:@font-swatch5-line-height;
-    letter-spacing: @font-swatch5-letter-spacing;
-    font-size: @font-swatch5-font-size; 
-}
-
-.widget.profile span {
-    font-family:@font-swatch9-font-family;
-    font-weight: @font-swatch9-font-weight;
-    color:@font-swatch9-color;
-    line-height:@font-swatch9-line-height;
-    letter-spacing: @font-swatch9-letter-spacing;
-    font-size: @font-swatch9-font-size; 
 }
 
 hr.line {
@@ -383,15 +314,6 @@ header.bk-header {
 /* ===============================
    3. FEATURE
    =============================== */
-/*
-.widget {
-    &.feature {
-        .feature-bgimg {
-            background-image: image('/images/feature-bg.jpg');
-        }
-    }
-}
-*/
 
 .widget {
     &.feature {
@@ -401,24 +323,29 @@ header.bk-header {
         overflow: hidden;
         height: 100%;
         z-index:5000;
-        .feature-bgimg {
-            height: 100%;
-        }
+        background-color: rgba(0,0,0,0.1);
         .feature-bgimg .content {
-            padding: 12em 2em;
+            display: block;
+            height: 650px;
+            padding: 15em 0em;
+            max-width: 1130px;
+            margin: 0 auto;
+            text-align: center;
+            button {
+                padding:14px 14px;
+            }
             @media @tablet {
                 padding: 8em 1em;
             }
             @media @mobile {
                 padding: 6em 1em;
             }
+            .wrapper {
+                width: 100%;
+                margin: 0;
+            }
             h2 {
                 padding-bottom: 0.1em;
-                color: @font-swatch8-color;
-                font-family: @font-swatch8-font-family;
-                font-size: @font-swatch8-font-size; 
-                letter-spacing: @font-swatch8-letter-spacing;
-                line-height: @font-swatch8-line-height;
                 word-wrap: break-word;
                 letter-spacing: 3px;
                 @media @tablet {
@@ -433,13 +360,9 @@ header.bk-header {
             h3  { 
                 color: @color-swatch7;
                 display: block;
-                font-family: @font-swatch9-font-family;
-                font-size: @font-swatch9-font-size; 
                 letter-spacing: bkscale(@font-swatch10-letter-spacing, 0.8);
                 line-height: @font-swatch5-line-height;
                 text-shadow: 2px 2px #000000;
-                max-width: 800px;
-                margin: 0px auto;
                 @media @tablet {
                     font-size: bkscale(@font-swatch5-font-size, 1.2);
                     letter-spacing: bkscale(@font-swatch10-letter-spacing, 0.6);
@@ -451,39 +374,6 @@ header.bk-header {
     }
 }
 
-.widget.feature .feature-bgimg .content .spare {
-    text-align:center;
-}
-
-.featurebtn-container {
-    position: relative;
-    margin-top: -150px;
-    padding-bottom: 85px;
-}
-
-.featurebtn {
-    background-image:image('/images/feature-btn.png');
-    height:60px;
-    background-repeat:no-repeat;
-    background-position:center;
-    width: 60px;
-    display:inline-block;
-}
-
-.widget.feature .feature-bgimg .content button {
-    background-color:@color-swatch3;
-    height: 45px;
-    -webkit-box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 0.2);
-}
-
-.widget.feature .feature-bgimg .content button:hover {
-    background-color:lighten(@color-swatch3,10%);
-}
-
-.widget.feature button:hover {
-    background-color:transparent;
-}
 
 /* ===============================
    4. MENU SECTIONS NAVIGATION
@@ -2700,10 +2590,6 @@ blockquote:before {
         display:block;
     }
 
-    .widget.feature .feature-bgimg .content {
-        padding:0;
-    }
-
     .companyheader {
         padding: 0;
         margin: 0px auto;
@@ -2846,6 +2732,16 @@ blockquote:before {
     .widget.ecombasket .ecombasket-list-container {
         top:20px;
     }
+
+    .widget.feature .feature-bgimg .content {
+        padding:19em 0em;
+    }
+
+    .canvas.wrapper {
+        width:90%;
+        margin:0 5%;
+        margin-top:-40px;
+    }
 } 
 
 /* ===============================
@@ -2979,6 +2875,14 @@ blockquote:before {
     .widget.ecomcheckout table tr td .checkout-quantitybtn button {
         width: 30px;
         height: 30px;
+    }
+
+    .widget.feature .feature-bgimg .content {
+        padding:18em 0em;
+    }
+
+    .widget.feature .feature-bgimg .content h2 span {
+        text-shadow:3px 3px #000000;
     }
 
 }

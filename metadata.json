@@ -121,9 +121,9 @@
         },
         "font8": {
             "font-family": "\"Oswald\", Arial, sans-serif",
-            "font-size": "68px",
+            "font-size": "58px",
             "font-weight": "700",
-            "line-height": "74px",
+            "line-height": "68px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
