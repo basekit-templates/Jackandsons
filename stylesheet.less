@@ -48,7 +48,7 @@ body {
 }
 
 .navbar {
-    padding:10px 0px;
+    padding:6px 0px;
     background-color:rgba(0, 0, 0, 0.2);
     margin-top:-100px;
     position:relative;
@@ -1724,9 +1724,9 @@ header.bk-header {
 footer.bk-footer {
     min-height: 100px;
     background-color: @color-swatch3;
-    padding: 6em 0 3em 0;
+    padding: 5em 0 3em 0;
     text-align: center;
-    margin-top: -60px;
+    margin-top: -50px;
         .widget.content {
             padding: 1em 0em 0em 0em;
             margin: 0 auto;
@@ -1879,74 +1879,6 @@ footer.bk-footer {
     &:hover {
         background-color: darken(@color-swatch3,5%);
     };
-}
-
-/* SVG ICONS */
-
-.svg .widget.socialicons span.bk-socialicons-twitter a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
-    background-image: image('/images/social/socialicons-twitter.svg');
-}
-
-.svg .widget.socialicons span.bk-socialicons-linkedin a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-    background-image: image('/images/social/socialicons-linkedin.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-facebook a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/social/socialicons-facebook.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-rss a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/social/socialicons-rss.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-googleplus a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-    background-image: image('/images/social/socialicons-googleplus.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-youtube a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/social/socialicons-youtube.svg')
-}
-
-/* PNG ICONS */
-
-.widget.socialicons span.bk-socialicons-twitter a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
-    background-image: image('/images/social/socialicons-twitter.png');
-}
-
-.widget.socialicons span.bk-socialicons-linkedin a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-    background-image: image('/images/social/socialicons-linkedin.png')
-}
-
-.widget.socialicons span.bk-socialicons-facebook a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/social/socialicons-facebook.png')
-}
-
-.widget.socialicons span.bk-socialicons-rss a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/social/socialicons-rss.png')
-}
-
-.widget.socialicons span.bk-socialicons-googleplus a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-    background-image: image('/images/social/socialicons-googleplus.png')
-}
-
-.widget.socialicons span.bk-socialicons-youtube a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/social/socialicons-youtube.png')
-}
-
-.widget.socialicons span a:hover, .widget.profile .bk-profile-socialicons span a:hover {
-    background-color:lighten(@color-swatch3,15%);
 }
 
 /* ===============================
@@ -2570,10 +2502,6 @@ blockquote:before {
         margin-top:-2px;
     }
 
-    .tabletmob-nav {
-        min-height:50px;
-    }
-
     .headerprofile .header-right .widget.profile{
         margin:0px auto;
         display:table;
@@ -2678,10 +2606,6 @@ blockquote:before {
         margin:0px auto;
         display:table;
     }
-    .full-height {
-        padding:0;
-        margin:0;
-    }
     .content-background {
         display:none;
     }
@@ -2707,6 +2631,11 @@ blockquote:before {
         padding:1em 0;
         margin-top:0;
     }
+
+    .footer-container .footer-center {
+        margin:0;
+    }
+
     .bk-pt-default .footer-container .footer-center {
         margin:0;
     }
@@ -2741,6 +2670,10 @@ blockquote:before {
         width:90%;
         margin:0 5%;
         margin-top:-40px;
+    }
+
+    .header-container {
+        padding:30px 0px;
     }
 } 
 
@@ -2789,7 +2722,7 @@ blockquote:before {
     .widget.feature .feature-bgimg .content h2 {
           font-size: bkscale(@font-swatch8-font-size,0.5);
           line-height:bkscale(@font-swatch8-line-height,0.5);
-          padding-bottom:10px;
+          padding-bottom:5px;
           text-shadow:1px 1px #000000;
     }
     .widget.feature .feature-bgimg .content h3 {
