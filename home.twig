@@ -3,7 +3,6 @@
 
 {% block content %}
     <div class="featureimage">
-    <div class="overlay">
           {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
       <header class="bk-header">
           <div class="header-container wrapper clearfix">
@@ -21,7 +20,6 @@
               </div>
           </div>
       </header> 
-    </div>
     </div>
     <div class="navbar wrapper">
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
