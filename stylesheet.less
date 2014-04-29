@@ -33,6 +33,10 @@ body {
     margin: 0 10%;
 }
 
+.overlay {
+    background-color:rgba(0, 0, 0, 0.3);
+}
+
 /* ===============================
    3. CUSTOM CSS
    =============================== */
@@ -49,7 +53,7 @@ body {
 
 .navbar {
     padding:6px 0px;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(0, 0, 0, 0.3);
     margin-top:-100px;
     position:relative;
     z-index:8000;
@@ -332,7 +336,9 @@ header.bk-header {
             margin: 0 auto;
             text-align: center;
             button {
-                padding:14px 14px;
+                padding:14px;
+                -webkit-box-shadow: 2px 2px 0 1px #000000;
+                box-shadow: 2px 2px 0 1px #000000;
             }
             @media @tablet {
                 padding: 8em 1em;
@@ -1295,12 +1301,10 @@ header.bk-header {
     .ecombasket-pull {
         width:120px;
         padding:0;
-        background-color:rgba(0,0,0,0.2);
+        background-color:rgba(0,0,0,0.4);
         float:right;
-        -webkit-box-shadow: 2px 2px 0 1px #000000;
-        box-shadow: 2px 2px 0 1px #000000;
         &:hover{
-            background-color:lighten(@color-swatch3,5%);
+            background-color:lighten(@color-swatch3,10%);
             }
         @media @tablet {
             margin:0px auto;
@@ -1308,14 +1312,14 @@ header.bk-header {
             float:none;
             left:0;
             top:-20px;
-            background-color:rgba(0,0,0,0.2);
+            background-color:rgba(0,0,0,0.4);
             border:0
         }
         @media @mobile {
             text-align: center;
         }
         p, .basket-count { 
-            padding:15px 0px;
+            padding:12px 0px;
             @media @tablet {
                 color: @font-swatch7-color;
                 font-size: @font-swatch7-font-size;
@@ -2811,7 +2815,7 @@ blockquote:before {
     }
 
     .widget.feature .feature-bgimg .content {
-        padding:18em 0em;
+        padding:14em 0em;
     }
 
     .widget.feature .feature-bgimg .content h2 span {
