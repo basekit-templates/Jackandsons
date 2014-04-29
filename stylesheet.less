@@ -1218,7 +1218,23 @@ header.bk-header {
                     width: 100%;
                 }
                 select {
-                    -webkit-appearance: menulist;
+                    -webkit-appearance: none;
+                    -moz-appearance: window;
+                    appearance: none;
+                    outline: none !important;
+                    -moz-outline-style: none;
+                    border: 1px solid @color-swatch5, 25%;
+                    position: relative;
+                    background: transparent;
+                    padding: 10px 23px 10px 10px;
+                    -moz-border-radius: 0px;
+                    -webkit-border-radius: 0px;
+                    border-radius: 0px;
+                    background-image: image('/images/arrow.png');
+                    background-position: right 3% center;
+                    background-repeat: no-repeat;
+                    border: 0;
+                    background-color: @color-swatch1;
                 }
             }
             .ecom-product-cattag {
@@ -1661,12 +1677,12 @@ header.bk-header {
             border: 1px solid @color-swatch5, 25%;
             position: relative;
             background: @color-swatch1;
-            padding: 8px 23px 8px 10px;
+            padding: 10px 23px 10px 10px;
             -moz-border-radius: 0px;
             -webkit-border-radius: 0px;
             border-radius: 0px;
             background-image: image('/images/arrow.png');
-            background-position: 98% center;
+            background-position: right 3% center;
             background-repeat: no-repeat;
         }
         .delivery-price-tax {
@@ -1755,13 +1771,15 @@ select {
     border: 1px solid @color-swatch5, 25%;
     position: relative;
     background: transparent;
-    padding: 8px 23px 8px 10px;
+    padding: 10px 23px 10px 10px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
     background-image: image('/images/arrow.png');
-    background-position: 94% center;
+    background-position: right 3% center;
     background-repeat: no-repeat;
+    border: 0;
+    background-color: darken(@color-swatch1,3%);
 }
 
 .productlist-display-form .form-group {
@@ -2752,11 +2770,18 @@ blockquote:before {
 
     select {
         width:100%;
+        background-position: 98% center;
     }
 
     .productlist-display-form {
         text-align:left;
         display:block;
+    }
+    .productlist-display-form .form-group {
+        padding:0;
+    }
+    .widget.ecomproductslist .productlist-display-form .form-group, .widget.ecomproductslist .productlist-item-count .form-group {
+        margin-bottom: 10px;
     }
 } 
 
