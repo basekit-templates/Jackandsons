@@ -33,6 +33,15 @@ body {
     margin: 0 10%;
 }
 
+.widget.profile span {
+    font-family:@font-swatch9-font-family;
+    font-weight: @font-swatch9-font-weight;
+    color:@font-swatch9-color;
+    line-height:@font-swatch9-line-height;
+    letter-spacing: @font-swatch9-letter-spacing;
+    font-size: @font-swatch9-font-size; 
+}
+
 /* ===============================
    3. CUSTOM CSS
    =============================== */
@@ -1492,9 +1501,12 @@ header.bk-header {
     clear: both;
     h2 {
         text-align: center;
-        margin-bottom: 1em;
-        border-bottom: 1px solid fade(@color-swatch5,8%);
-        padding: 1em 0 2em;
+        border-bottom: 1px solid rgba(117, 117, 117, 0.08);
+        padding: 1em 0 1em;
+        background-color:@color-swatch3;
+        -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
+        box-shadow: 2px 2px 0 1px #D9D9D9;
+        color:@font-swatch6-color;
         @media @tablet {
             padding: 1em;
         }
@@ -1502,6 +1514,11 @@ header.bk-header {
     table {
         border-spacing: 0;
         width: 100%;
+        -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
+        box-shadow: 2px 2px 0 1px #D9D9D9;
+        background-color:darken(@color-swatch1,3%);
+        padding:20px;
+        margin-bottom:20px;
         tr {
             width: 100%;
             th, td {
@@ -1544,7 +1561,7 @@ header.bk-header {
                 .checkout-quantitybtn {
                     display: inline-block;
                     margin: 10px 0 0;
-                    background-color:darken(@color-swatch1,5%);
+                    background-color:darken(@color-swatch1,10%);
                     button {
                         background-color: @color-swatch3;
                         margin: 0;
@@ -1636,8 +1653,21 @@ header.bk-header {
             margin-bottom: 1em;
         }
         select {
-            margin-bottom: 1.5em;
-            -webkit-appearance: menulist;
+            -webkit-appearance: none;
+            -moz-appearance: window;
+            appearance: none;
+            outline: none !important;
+            -moz-outline-style: none;
+            border: 1px solid @color-swatch5, 25%;
+            position: relative;
+            background: @color-swatch1;
+            padding: 8px 23px 8px 10px;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+            background-image: image('/images/arrow.png');
+            background-position: 98% center;
+            background-repeat: no-repeat;
         }
         .delivery-price-tax {
             text-align: right;
@@ -1714,6 +1744,29 @@ header.bk-header {
 .widget.ecomproductslist .ecom-productslist-image-wrap {
     -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
     box-shadow: 2px 2px 0 1px #D9D9D9;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 8px 23px 8px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: 94% center;
+    background-repeat: no-repeat;
+}
+
+.productlist-display-form .form-group {
+    padding:0px 20px 0px 0px;
+    float:left;
 }
 
 /* ===============================
