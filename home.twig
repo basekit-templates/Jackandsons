@@ -12,7 +12,7 @@
               </div>
                   <div class="header-center">
                       {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                      {{widget('companyname', 'companyname', {"business": "LIMITED COMPANY"})|raw}}
+                      {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
                   </div>
                   <div class="header-right">
                       {{widget('ecombasket', 'ecombasket', {})|raw}}
@@ -25,10 +25,6 @@
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
     </div>
       <div class="canvas wrapper clearfix">
-              {{widget('ecombasket', 'ecombasket', {})|raw}}
-    {{widget('ecomcheckout', 'ecomcheckout', {})|raw}}
-    {{widget('ecomproductslist', 'ecomproductslist', {})|raw}}
-    {{widget('ecomproduct', 'ecomproduct', {})|raw}}
               {{zone('main')|raw}}
       </div> 
       <footer class="bk-footer">
@@ -38,7 +34,7 @@
                   </div>
                   <div class="footer-center">
                        {{widget('logo', 'logofooter', {"defaultlogo": asset('images/logo.png')})|raw}}
-                       {{widget('companyname', 'companynamefooter', {"business": "LIMITED COMPANY"})|raw}}
+                       {{widget('companyname', 'companynamefooter', {"business": "profile"})|raw}}
                   </div>
                   <div class="footer-right">
                      {{widget('content', 'textbox2', {content: '<h4>INFO@JACKANDSONS.CO.UK</h4>', lines: 'all'})|raw}}
