@@ -95,7 +95,7 @@ header.bk-header {
 }
 
 .twitter ul li a {
-    font-weight:400;
+    font-weight:300;
     font-size:@font-swatch4-font-size;
 }
 .content-background {
@@ -319,6 +319,14 @@ header.bk-header {
     top:70px;
 }
 
+.bk-pt-default .widget .extendednavigation ul li:hover ul {
+    z-index:9999;
+}
+
+.bk-pt-default .canvas {
+    z-index:99;
+}
+
 /* ===============================
    3. FEATURE
    =============================== */
@@ -334,8 +342,8 @@ header.bk-header {
         background-color: rgba(0,0,0,0.1);
         .feature-bgimg .content {
             display: block;
-            height: 650px;
-            padding: 15em 0em;
+            height: 750px;
+            padding: 20em 0em;
             max-width: 1130px;
             margin: 0 auto;
             text-align: center;
@@ -1516,6 +1524,7 @@ header.bk-header {
 
 .widget.ecomcheckout {
     clear: both;
+    margin-top:30px;
     h2 {
         text-align: center;
         border-bottom: 1px solid rgba(117, 117, 117, 0.08);
@@ -1535,7 +1544,7 @@ header.bk-header {
         box-shadow: 2px 2px 0 1px #D9D9D9;
         background-color:darken(@color-swatch1,3%);
         padding:20px;
-        margin-bottom:20px;
+        margin-bottom:30px;
         tr {
             width: 100%;
             th, td {
@@ -1633,7 +1642,6 @@ header.bk-header {
     .delivery {
         background-color:darken(@color-swatch1,3%);
         padding: 2em;
-        width: 50%;
         -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
         box-shadow: 2px 2px 0 1px #D9D9D9;
         @media @tablet {
@@ -1803,6 +1811,10 @@ select {
 .widget.ecomproductslist .productlist-display-form, .widget.ecomproductslist .productlist-item-count {
     margin: 0px auto;
     display: table;
+}
+
+.checkout-legal-links {
+    margin-top:10px;
 }
 
 /* ===============================
@@ -2757,7 +2769,6 @@ blockquote:before {
     .canvas.wrapper {
         width:90%;
         margin:0 5%;
-        margin-top:-40px;
     }
 
     .header-container {
@@ -2783,6 +2794,9 @@ blockquote:before {
     }
     .widget.ecomproductslist .productlist-display-form .form-group, .widget.ecomproductslist .productlist-item-count .form-group {
         margin-bottom: 10px;
+    }
+    .widget.ecombasket .ecombasket-list-container {
+        background-color:@color-swatch1;
     }
 } 
 
@@ -2925,6 +2939,10 @@ blockquote:before {
 
     .widget.feature .feature-bgimg .content h2 span {
         text-shadow:3px 3px #000000;
+    }
+
+    .widget.feature .feature-bgimg .content {
+        height:550px;
     }
 
 }
