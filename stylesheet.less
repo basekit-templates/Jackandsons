@@ -392,6 +392,9 @@ header.bk-header {
     }
 }
 
+.widget.feature .feature-bgimg .content .spare {
+    text-align: center;
+}
 
 /* ===============================
    4. MENU SECTIONS NAVIGATION
@@ -1244,6 +1247,8 @@ header.bk-header {
                     background-repeat: no-repeat;
                     border: 0;
                     background-color: @color-swatch1;
+                    background-position-x: 95%;
+                    background-position-y: 53%;
                 }
             }
             .ecom-product-cattag {
@@ -1693,6 +1698,8 @@ header.bk-header {
             background-image: image('/images/arrow.png');
             background-position: right 2% center;
             background-repeat: no-repeat;
+            background-position-x: 98%;
+            background-position-y: 53%;
         }
         .delivery-price-tax {
             text-align: right;
@@ -1784,6 +1791,8 @@ select {
     background-repeat: no-repeat;
     border: 0;
     background-color: darken(@color-swatch1,3%);
+    background-position-x: 95%;
+    background-position-y: 53%;
 }
 
 .productlist-display-form .form-group {
@@ -2052,6 +2061,11 @@ footer.bk-footer {
                display: none;
            }
        }
+
+.widget.blogsearch.label {
+    display:block;
+}
+
 
 /* ===============================
    SLIDESHOW WIDGET
@@ -2359,16 +2373,6 @@ button.btn:hover {
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
-}
-
-.widget.profile form fieldset input {
-    width:65%;
-    @media @tablet {
-        width: 90%;
-    }
-    @media @mobile {
-        width: 100%;
-    }
 }
 
 /* ===============================
@@ -2697,10 +2701,6 @@ blockquote:before {
         text-align:center;
         padding:0;
     }
-    .widget.feature .feature-bgimg .content button {
-        margin:0px auto;
-        display:table;
-    }
     .content-background {
         display:none;
     }
@@ -2787,6 +2787,9 @@ blockquote:before {
     }
     .widget.ecombasket .ecombasket-list-container {
         background-color:@color-swatch1;
+    }
+    .canvas {
+        padding:20px 30px;
     }
 } 
 
@@ -2877,6 +2880,9 @@ blockquote:before {
 
     .widget.logo img {
         width:60px;
+    }
+
+    .header-center .widget.logo img {
         margin-left:25px;
     }
 
@@ -2913,7 +2919,7 @@ blockquote:before {
         padding-bottom: 80px;
     }
     .signupform fieldset input {
-        width:50%;
+        width:65%;
     }
     .widget.profile form fieldset input {
         width:50%;
@@ -2933,6 +2939,10 @@ blockquote:before {
 
     .widget.feature .feature-bgimg .content {
         height:500px;
+    }
+
+    .canvas {
+        padding:20px;
     }
 
 }
