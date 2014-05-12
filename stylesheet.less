@@ -250,81 +250,8 @@ header.bk-header {
    2. DEFAULT PAGE
    =============================== */
 
-.bk-pt-default .featureimage {
-    height:100%;
-}
-
-.bk-pt-default .bk-header {
-    background-color:@color-swatch3;
-}
-
-.bk-pt-default .featurebtn-container {
-    padding-bottom: 80px;
-}
-
-.bk-pt-default .widget.content {
-    margin-top:20px;
-}
-
-.bk-pt-default .bk-header {
-    position:relative;
-}
-
-.bk-pt-default .widget.menusections {
-    margin-top:40px;
-}
-
-.bk-pt-default .widget.extendednavigation {
-    margin-right:0;
-    min-height:0!important;
-}
-
-.bk-pt-default .widget.ecombasket .ecombasket-list-container {
-    z-index:9999;
-}
-
-.bk-pt-default .navbar {
-    margin-top:0;
-    background-color:lighten(@color-swatch3,10%);
-}
-
-.bk-pt-default .widget.ecombasket .ecombasket-pull {
-    border:2px solid @color-swatch1;
-    width:120px;
-}
-
-.bk-pt-default .widget.companyname {
-    padding-bottom:0;
-}
-
-.bk-pt-default .widget.ecombasket .ecombasket-pull:hover {
-    background-color:lighten(@color-swatch3,10px);
-}
-
-.bk-pt-default footer.bk-footer {
-    padding:2em 0;
-    margin-top:0;
-}
-
-.bk-pt-default .menu-container {
-    background-color: fadeout(@color-swatch4, 95%);
-}
-
-.bk-pt-default .navbar {
-    z-index:auto;
-}
-
-.bk-pt-default .widget.ecombasket .ecombasket-list-container {
-    margin-top:0;
-    top:70px;
-}
-
-.bk-pt-default .widget .extendednavigation ul li:hover ul {
-    z-index:9999;
-}
-
-.bk-pt-default .canvas {
-    z-index:99;
+.bk-pt-default .widget.feature {
+    display:none;
 }
 
 /* ===============================
@@ -333,6 +260,7 @@ header.bk-header {
 
 .featureimage {
     min-height:300px;
+    background-color:lighten(@color-swatch3,10%);
 }
 
 .widget {
@@ -2764,7 +2692,8 @@ blockquote:before {
     }
 
     .widget.feature .feature-bgimg .content {
-        padding:22em 0em;
+        padding:19em 0em;
+        height:0;
     }
 
     .header-container {
@@ -2884,10 +2813,6 @@ blockquote:before {
         background-color: transparent;
     }
 
-    .widget.logo img {
-        width:60px;
-    }
-
     .widget.profile .bk-profile-socialicons {
         padding:0;
     }
@@ -2912,9 +2837,6 @@ blockquote:before {
     .widget.feature .spare {
         margin-top:50px;
         padding-top:50px;
-    }
-    .widget.logo img {
-        width: 80%;
     }
     .featurebtn-container {
         margin-top: -120px;
@@ -2948,6 +2870,10 @@ blockquote:before {
     }
     .widget.ecombasket .ecombasket-pull {
         width:100%;
+    }
+    .widget.logo img {
+        width: auto;
+        max-height: 140px;
     }
 
 }
