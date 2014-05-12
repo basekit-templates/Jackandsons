@@ -339,6 +339,7 @@ header.bk-header {
         overflow: hidden;
         height: 100%;
         z-index:5000;
+        min-height: 300px;
         background-color: rgba(0,0,0,0.1);
         .feature-bgimg .content {
             display: block;
@@ -800,7 +801,6 @@ header.bk-header {
 
 .widget.companyname {
     display:table;
-    margin-top:-20px;
 }
 
 /* LOGO */
@@ -809,6 +809,7 @@ header.bk-header {
     display: block;
     margin:0px auto;
     display:table;
+    text-align:center;
 }
 
 .box {
@@ -1529,7 +1530,7 @@ header.bk-header {
 
 .widget.ecomcheckout {
     clear: both;
-    margin-top:30px;
+    margin: 40px 0px;
     h2 {
         text-align: center;
         border-bottom: 1px solid rgba(117, 117, 117, 0.08);
@@ -1819,6 +1820,19 @@ select {
 
 .checkout-legal-links {
     margin-top:10px;
+}
+
+.checkout-empty p {
+    padding:20px 0px;
+}
+
+.widget.ecomcheckout.btn {
+    padding:14px;
+}
+
+a.checkout-empty-link.btn {
+     color: @font-swatch7-color;
+     padding:14px;
 }
 
 /* ===============================
@@ -2814,8 +2828,8 @@ blockquote:before {
     }
 
     .companyheader .companyname a {
-          font-size: bkscale(@font-swatch10-font-size,0.9);
-          line-height:bkscale(@font-swatch10-line-height,0.9);
+          font-size: bkscale(@font-swatch10-font-size,1.2);
+          line-height:bkscale(@font-swatch10-line-height,1.2);
           padding-bottom:0px;  
     }
 
@@ -2836,8 +2850,8 @@ blockquote:before {
           letter-spacing:bkscale(@font-swatch2-letter-spacing,0.5);
     }
     .widget.feature .feature-bgimg .content h2 {
-          font-size: bkscale(@font-swatch8-font-size,0.5);
-          line-height:bkscale(@font-swatch8-line-height,0.5);
+          font-size: bkscale(@font-swatch8-font-size,0.4);
+          line-height:bkscale(@font-swatch8-line-height,0.4);
           padding-bottom:5px;
           text-shadow:1px 1px #000000;
     }
@@ -2880,10 +2894,6 @@ blockquote:before {
 
     .widget.logo img {
         width:60px;
-    }
-
-    .header-center .widget.logo img {
-        margin-left:25px;
     }
 
     .widget.profile .bk-profile-socialicons {
@@ -2930,7 +2940,7 @@ blockquote:before {
     }
 
     .widget.feature .feature-bgimg .content {
-        padding:14em 0em;
+        padding:18em 0em;
     }
 
     .widget.feature .feature-bgimg .content h2 span {
