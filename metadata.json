@@ -2,6 +2,7 @@
     "name":"JackandSons",
     "thumbnail":"jackandsons.png",
     "screenshot":"jackandsons.png",
+    "templateType":"ecommerce",
     "pageTypes": ["home", "default", "ecomcheckout", "about", "contact", "gallery"],
     "tags": {
     "en": ["minimal", "clean", "photography", "vintage", "modern", "retail", "fashion", "website", "creative", "man", "professional", "unique", "ecommerce", "sans-serif"],
