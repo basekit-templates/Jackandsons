@@ -61,7 +61,18 @@ body {
     background-color:rgba(0, 0, 0, 0.3);
     margin-top:-100px;
     position:relative;
-    z-index:5999;
+    z-index:9999;
+}
+
+.bk-pt-default .navbar {
+    @media @tablet { 
+        z-index:2!important;
+    }
+}
+.bk-pt-default .canvas {
+    @media @tablet {
+        z-index:1!important;
+    }
 }
    
 .contain {
@@ -257,6 +268,10 @@ header.bk-header {
 
 .bk-pt-default .widget.feature {
     display:none;
+}
+
+.bk-pt-default .navbar {
+    z-index:1;
 }
 
 /* ===============================
@@ -2684,6 +2699,7 @@ blockquote:before {
     .navbar {
         position:absolute;
         top:0;
+        z-index:9999;
     }
     header.bk-header {
         margin-top:30px;
@@ -2736,6 +2752,12 @@ blockquote:before {
     .widget.logo img {
         max-width: 190px;
         max-height: 140px;
+    }
+    .bk-pt-default .navbar {
+        z-index:2!important;
+    }
+    .bk-pt-default .canvas {
+        z-index:1!important;
     }
 } 
 
