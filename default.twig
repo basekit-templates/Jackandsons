@@ -23,8 +23,8 @@
         <div class="featureimage">
           {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}} 
     </div>
-    <div class="navbar wrapper">
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    <div class="navbar wrapper clearfix">
+        {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
     </div>
       <div class="canvas wrapper clearfix">
               {{zone('main')|raw}}

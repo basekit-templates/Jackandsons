@@ -56,14 +56,6 @@ body {
     z-index:5999;
 }
 
-.navbar {
-    padding:10px 0px 2px;
-    background-color:rgba(0, 0, 0, 0.3);
-    margin-top:-100px;
-    position:relative;
-    z-index:9999;
-}
-
 .bk-pt-default .navbar {
     z-index:2!important;
 }
@@ -479,6 +471,14 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
    EXTENDED NAVIGATION
    =============================== */
 
+.navbar {
+    background-color:rgba(0, 0, 0, 0.3);
+    margin-top:-100px;
+    position:relative;
+    z-index:9999;
+    padding:15px;
+}
+
 .tabletmob-nav {
     display: none;
     background-color: darken(@color-swatch1,10%);
@@ -498,8 +498,7 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
 .widget {
     .extendednavigation {
         position: relative;
-        display: inline-block;
-        padding:5px 0px;
+        display: block;
         margin:0px auto;
         width: 100%;
         @media @tablet {
@@ -692,7 +691,7 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
 
 .bk-pt-default .widget.extendednavigation {
     background-color:none;
-    min-height:50px;
+    min-height:30px;
     ul {
         li {
             &.folder{
@@ -2783,6 +2782,9 @@ blockquote:before {
     }
     .bk-pt-default .widget .extendednavigation {
         background-color:@color-swatch3;
+    }
+    .featureimage {
+        min-height: 300px;
     }
 } 
 
