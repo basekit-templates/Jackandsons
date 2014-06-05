@@ -33,7 +33,7 @@ body {
     margin: 0 10%;
 }
 
-.widget.profile span {
+.widget.profile span, .widget.profile a, .widget.profile p  {
     font-family:@font-swatch9-font-family;
     font-weight: @font-swatch9-font-weight;
     color:@font-swatch9-color;
@@ -57,7 +57,7 @@ body {
 }
 
 .navbar {
-    padding:6px 0px;
+    padding:10px 0px 2px;
     background-color:rgba(0, 0, 0, 0.3);
     margin-top:-100px;
     position:relative;
@@ -107,7 +107,7 @@ header.bk-header {
 }
 
 .twitter ul li a {
-    font-weight:300;
+    font-weight:400;
     font-size:@font-swatch4-font-size;
 }
 .content-background {
@@ -258,6 +258,11 @@ header.bk-header {
     color:@font-swatch6-color;
 }
 
+input, textarea {
+    -webkit-box-shadow: 2px 2px 0 1px #d9d9d9;
+box-shadow: 2px 2px 0 1px #d9d9d9;
+}
+
 /* ===============================
    2. DEFAULT PAGE
    =============================== */
@@ -290,8 +295,8 @@ header.bk-header {
         background-color: rgba(0,0,0,0.1);
         .feature-bgimg .content {
             display: block;
-            height: 750px;
-            padding: 20em 0em;
+            height: 650px;
+            padding: 16em 0em;
             max-width: 1130px;
             margin: 0 auto;
             text-align: center;
@@ -1195,6 +1200,8 @@ header.bk-header {
                     background-color: @color-swatch1;
                     background-position-x: 95%;
                     background-position-y: 53%;
+                    -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
+                    box-shadow: 2px 2px 0 1px #D9D9D9;
                 }
             }
             .ecom-product-cattag {
@@ -1281,7 +1288,7 @@ header.bk-header {
     .ecombasket-pull {
         width:120px;
         padding:0;
-        background-color:rgba(0,0,0,0.4);
+        background-color:@color-swatch3;
         float:right;
         &:hover{
             background-color:lighten(@color-swatch3,10%);
@@ -1292,7 +1299,6 @@ header.bk-header {
             float:none;
             left:0;
             top:-20px;
-            background-color:rgba(0,0,0,0.4);
             border:0
         }
         @media @mobile {
@@ -1544,7 +1550,7 @@ header.bk-header {
                 .checkout-quantitybtn {
                     display: inline-block;
                     margin: 10px 0 0;
-                    background-color:darken(@color-swatch1,10%);
+                    background-color:@color-swatch1;
                     button {
                         background-color: @color-swatch3;
                         margin: 0;
@@ -1648,6 +1654,8 @@ header.bk-header {
             background-repeat: no-repeat;
             background-position-x: 98%;
             background-position-y: 53%;
+            -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
+            box-shadow: 2px 2px 0 1px #D9D9D9;
         }
         .delivery-price-tax {
             text-align: right;
@@ -1741,6 +1749,8 @@ select {
     background-color: darken(@color-swatch1,3%);
     background-position-x: 95%;
     background-position-y: 53%;
+    -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
+    box-shadow: 2px 2px 0 1px #D9D9D9;
 }
 
 .productlist-display-form .form-group {
@@ -1781,6 +1791,12 @@ a.checkout-empty-link.btn {
      color: @font-swatch7-color;
      padding:14px;
 }
+
+.widget.ecomproduct .ecom-product .btn, .widget.feature .feature-bgimg .content button.btn, .widget.ecombasket .ecombasket-pull {
+    -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
+    box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 0.2);
+}
+
 
 /* ===============================
    7. FOOTER
@@ -2270,9 +2286,10 @@ footer.bk-footer {
 
 button.btn {
     background-color:@color-swatch3;
-    padding:15px;
     color: @font-swatch7-color;
     border-radius:0;
+    -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
+    box-shadow: 2px 2px 0 1px #D9D9D9;
 }
 
 button.btn:hover {
@@ -2322,7 +2339,7 @@ button.btn:hover {
 
 .widget.profile form button {
     background-color:@color-swatch3;
-    padding:11px 14px 10px 14px;
+    padding:11px 14px;
     -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
     box-shadow: 2px 2px 0 1px #D9D9D9;
 }
