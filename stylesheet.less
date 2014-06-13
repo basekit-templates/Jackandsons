@@ -511,7 +511,6 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
             }
         }
         ul {
-            text-align: center;
             padding: 0;
             @media @tablet {
                 /* Hidden until nav icon is clicked */
@@ -593,14 +592,6 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
                         letter-spacing: @font-swatch6-letter-spacing;
                         position: relative;
                         &:after {
-                            content: "\25BC";
-                            font-size: 8px;
-                            position: absolute;
-                            top: 1px;
-                            display: block;
-                            z-index: 9999999;
-                            right: 0;
-                            color: @color-swatch1;
                             @media @tablet {
                                 font-size: 10px;
                                 padding-right: 10px;
@@ -685,10 +676,6 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
     color:@font-swatch6-color;
 }
 
-.widget .extendednavigation ul li.folder:after {
-    display: none;
-}
-
 .bk-pt-default .widget.extendednavigation {
     background-color:none;
     min-height:30px;
@@ -710,10 +697,6 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
   text-decoration: underline;
 }
 
-.widget .extendednavigation ul.align-center li:hover li {
-    text-align:left;
-}
-
 .widget .extendednavigation a.pull:after {
     content: "";
     background: image('/images/nav-icon.png') no-repeat; 
@@ -726,6 +709,10 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
     border-radius:0;
     box-shadow:none;
     margin-top:20px; 
+}
+
+.widget .extendednavigation ul li.folder:after {
+    border-top-color: @color-swatch1;
 }
 
 
@@ -2785,6 +2772,10 @@ blockquote:before {
     }
     .featureimage {
         min-height: 300px;
+    }
+    .widget .extendednavigation ul.align-right li.folder:after {
+        left: 5px;
+        right: inherit;
     }
 } 
 
