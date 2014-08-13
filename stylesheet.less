@@ -479,7 +479,7 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
     margin-top:-100px;
     position:relative;
     z-index:9999;
-    padding:15px;
+    padding: 0 15px;
 }
 
 .tabletmob-nav {
@@ -508,6 +508,14 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
             background-color: transparent;
             margin-right:0;
         }
+
+        
+        & ul.align-right li.folder.after {
+            @media @tablet {
+                left: 14px;
+            }
+        }
+
         li {
             ul {
                 display: none !important;
@@ -527,10 +535,9 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
             li {
                 float: left;
                 display: block;
-                padding: 5px 0;
+                padding: 0;
                 @media @tablet {
                     width: 100%;
-                    padding: 1em 0;
                     border-bottom:1px dotted rgb(48, 46, 46);
                 }
                 &:last-child {
@@ -546,7 +553,7 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
                         background-color: lighten(@color-swatch3,15%);
                         z-index: 500;
                         padding: 0;
-                        margin: 5px 0 0 0;
+                        margin: 0;
                         li {
                             display: block;
                             width: 100%;
@@ -560,15 +567,20 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
                     }
                 }
 
+                .text {
+                    padding: 20px 25px;
+                    display: block;
+                }
+
                 a {
                     display: block;
-                    padding: 0 15px;
                     font-family: @font-swatch6-font-family;
                     font-size: @font-swatch6-font-size;
                     font-weight: @font-swatch6-font-weight;
                     color: @font-swatch6-color;
                     line-height: @font-swatch6-line-height;
                     letter-spacing: @font-swatch6-letter-spacing;
+                    padding: 0;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -584,9 +596,12 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
                         background-repeat: repeat;
                         background-position: center;
                     }
+                    
+                    &:after {
+                        right: 14px;
+                    }
+
                     .text {
-                        display: block;
-                        padding: 0 15px;
                         font-family: @font-swatch6-font-family;
                         font-size: @font-swatch6-font-size;
                         font-weight: @font-swatch6-font-weight;
@@ -611,15 +626,10 @@ box-shadow: 2px 2px 0 1px #d9d9d9;
                         }
                     }
                     ul {
-                        padding: 10px 0px;
-                        @media @tablet {
-                            margin-top: 14px;
-                        }
                         li {
                             a { 
                                 .text {
                                     color: @font-swatch6-color;
-                                    padding: 0;
                                     &:after {
                                         content: "";
                                     }
@@ -2561,7 +2571,7 @@ blockquote:before {
 
     .widget .extendednavigation a.pull {
         width:100%;
-        top:-7px;
+        top: 0px;
         position:relative;
     }
 
@@ -2617,7 +2627,7 @@ blockquote:before {
         left: 0;
         border-radius: 0;
         box-shadow: none;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     header {
@@ -2685,9 +2695,9 @@ blockquote:before {
         margin-top:0;
     }
     .bk-pt-default .widget.ecombasket .ecombasket-list-container {
-        width:100%;
         position:absolute;
-        margin-top:10px;
+        margin-top:25px;
+        width: 100%;
     }
     .bk-pt-default .header-container {
         padding: 30px 0px 0px 0px;
