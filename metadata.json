@@ -3,7 +3,7 @@
     "thumbnail":"jackandsons.png",
     "screenshot":"jackandsons.png",
     "templateType":"ecommerce",
-    
+    "pageTypes":["home"],
     "tags": {
     "en": ["minimal", "clean", "photography", "vintage", "modern", "retail", "fashion", "website", "creative", "man", "professional", "unique", "ecommerce", "sans-serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
