@@ -2441,7 +2441,8 @@ footer.bk-footer {
     display:none;
 }
 
-.widget.contactform form fieldset input {
+.widget.contactform form fieldset input,
+.advancedcontactform input {
     width: 100%;
     padding:15px 0px;
     font-family: @font-swatch5-font-family;
@@ -2454,7 +2455,8 @@ footer.bk-footer {
     border-radius:0;
 }
 
-.widget.contactform form fieldset textarea {
+.widget.contactform form fieldset textarea,
+.advancedcontactform textarea {
     width: 100%;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
@@ -2556,6 +2558,33 @@ button.btn:hover {
   -o-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
+
+// Advanced Contact Form
+.advancedcontactform {
+    .label {
+        margin-bottom: 10px;
+    }
+    .input {
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+    select {
+        margin-top: 10px;
+        background-position-x: 99%;
+    }
+    .input--checkbox,
+    .input--radio {
+        box-shadow: none;
+    }
+    button {
+        margin-top: 10px;
+    }
+}
+
+
+
 
 /* ===============================
    SIGN UP FORM
