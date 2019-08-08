@@ -1,5 +1,6 @@
 {
     "name":"JackandSons",
+    "versionTenCompatible": 1,
     "thumbnail":"jackandsons.png",
     "screenshot":"jackandsons-screenshot.jpg",
     "templateType":"ecommerce",
